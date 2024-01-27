@@ -1,0 +1,2 @@
+Object.defineProperty(exports,"__esModule",{ value:!0 }),exports.default=function(e,t){void 0===t&&(t={});const d=t.insertAt;if(e&&typeof document!=="undefined"){const s=document.head||document.getElementsByTagName("head")[0]; const n=document.createElement("style");n.type="text/css",d==="top"&&s.firstChild?s.insertBefore(n,s.firstChild):s.appendChild(n),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(document.createTextNode(e))}}
+// # sourceMappingURL=style-inject.es.js.map
