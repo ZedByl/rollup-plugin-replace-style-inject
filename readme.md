@@ -5,7 +5,10 @@ This plugin changes the path to style-inject  and installs a built copy of it
 
 ```bash
 # npm
-npm install rollup-plugin-replace-style-inject -D
+npm install --save-dev rollup-plugin-replace-style-inject
+
+# yarn
+yarn add -D rollup-plugin-replace-style-inject
 ```
 
 ## Usage
