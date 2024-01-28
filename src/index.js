@@ -1,7 +1,7 @@
-export default function replaceStyleInject(
+export default function replaceStyleInject({
     replaceValue = 'rollup-plugin-replace-style-inject/vendor/style-inject/style-inject.es.js',
     regExp = /.*(.scss.js)$/
-) {
+}) {
     const plugin = { name: 'Rollup Plugin Replace style-inject`' }
     const searchValue = /[./]*\.\/node_modules\/style-inject\/dist\/style-inject.es.js/
     if (!replaceValue || !regExp) return plugin

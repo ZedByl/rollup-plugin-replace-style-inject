@@ -41,7 +41,7 @@ Type: `String`
 Default value: `'rollup-plugin-replace-style-inject/vendor/style-inject/style-inject.es.js'`
 
 ```js
-replaceStyleInject('your-file-path')
+replaceStyleInject({ replaceValue: 'your-file-path' })
 ```
 
 #### regExp
@@ -52,7 +52,7 @@ Default value: `/.*(.scss.js)$/`
 Regular expression to find style files
 
 ```js
-replaceStyleInject('your-file-path', '/.*(.scss.js)$/')
+replaceStyleInject({ regExp: '/.*(.scss.js)$/' })
 ```
 
 ## License
