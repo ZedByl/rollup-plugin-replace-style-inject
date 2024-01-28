@@ -10,4 +10,4 @@ export type Options = {
 	regExp?: string
 }
 
-export default function replaceStyleInject(options: Options): Plugin
+export default function replaceStyleInject(options?: Options): Plugin

@@ -55,6 +55,18 @@ Regular expression to find style files
 replaceStyleInject({ regExp: '/.*(.scss.js)$/' })
 ```
 
+## Dependencies
+
+Don't forget to specify the plugin as a dependency for your library
+
+```json
+{
+  "dependencies": {
+    "rollup-plugin-replace-style-inject": "latest"
+  }
+}
+```
+
 ## License
 
 MIT
