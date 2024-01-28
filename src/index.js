@@ -1,4 +1,4 @@
-export default function replaceStyleInject({ replaceValue, regExp }) {
+export default function replaceStyleInject({ replaceValue, regExp } = {}) {
     const defaultSearchValue = /[./]*\.\/node_modules\/style-inject\/dist\/style-inject.es.js/
     const defaultReplaceValue = replaceValue || 'rollup-plugin-replace-style-inject/style-inject-custom/style-inject.es.js'
     const defaultRegExp = regExp || /.*(.scss.js)$/

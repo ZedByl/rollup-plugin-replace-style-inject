@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-replace-style-inject",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This plugin changes the path to style-inject and installs a built copy of it",
   "repository": {
     "type": "git",
