@@ -1,6 +1,6 @@
 node_modules
 dist
-vendor
+style-inject-custom
 index.d.ts
 *.config.ts
 *.md

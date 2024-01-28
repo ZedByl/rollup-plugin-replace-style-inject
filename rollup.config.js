@@ -14,7 +14,7 @@ export default [
     plugins: [
       copy({
         targets: [
-          { src: 'vendor', dest: 'dist' },
+          { src: 'style-inject-custom', dest: 'dist' },
           { src: 'index.d.ts', dest: 'dist' },
           { src: 'readme.md', dest: 'dist' },
           { src: 'src/package.json', dest: 'dist' },

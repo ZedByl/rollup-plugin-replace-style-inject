@@ -38,7 +38,7 @@ Your custom path to the file `style-inject.es.js`
 
 Type: `String`
 
-Default value: `'rollup-plugin-replace-style-inject/vendor/style-inject/style-inject.es.js'`
+Default value: `'rollup-plugin-replace-style-inject/style-inject-custom/style-inject.es.js'`
 
 ```js
 replaceStyleInject({ replaceValue: 'your-file-path' })

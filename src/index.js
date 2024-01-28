@@ -1,18 +1,16 @@
-export default function replaceStyleInject({
-    replaceValue = 'rollup-plugin-replace-style-inject/vendor/style-inject/style-inject.es.js',
-    regExp = /.*(.scss.js)$/
-}) {
-    const plugin = { name: 'Rollup Plugin Replace style-inject`' }
-    const searchValue = /[./]*\.\/node_modules\/style-inject\/dist\/style-inject.es.js/
-    if (!replaceValue || !regExp) return plugin
+export default function replaceStyleInject({ replaceValue, regExp }) {
+    const defaultSearchValue = /[./]*\.\/node_modules\/style-inject\/dist\/style-inject.es.js/
+    const defaultReplaceValue = replaceValue || 'rollup-plugin-replace-style-inject/style-inject-custom/style-inject.es.js'
+    const defaultRegExp = regExp || /.*(.scss.js)$/
 
-    return Object.assign(plugin, {
+    return {
+        name: 'Rollup Plugin Replace style-inject',
         generateBundle: (options, bundle) => {
             Object.entries(bundle).forEach(entry => {
-                if (!entry[0].match(regExp)) return
+                if (!entry[0].match(defaultRegExp)) return
 
-                bundle[entry[0]].code = entry[1].code.replace(searchValue, replaceValue)
+                bundle[entry[0]].code = entry[1].code.replace(defaultSearchValue, defaultReplaceValue)
             })
         },
-    })
+    }
 }
